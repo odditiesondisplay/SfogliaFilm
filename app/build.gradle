@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.example.fab.android.sfogliafilm.sfogliafilm"
+        applicationId "com.example.fab.android.sfogliafilm"
         minSdkVersion 15
         targetSdkVersion 21
         versionCode 1

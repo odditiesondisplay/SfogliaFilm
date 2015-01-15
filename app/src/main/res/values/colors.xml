@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey">#cccccc</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="violetto">#bb94af</color>
+    <color name="violettoscuro">#714b63</color>
+    <color name="celestino">#ff89c3cc</color>
+    <color name="celestinoscuro">#ff567d94</color>
+    <color name="altro">#ff91958f</color>
+    <color name="backgroundSTD">@color/celestino</color>
+    <color name="selectedActive">@color/celestinoscuro</color>
+    <color name="selectedPressed">@color/violetto</color>
+    <color name="backgroundTitle">@color/celestinoscuro</color>
+</resources>

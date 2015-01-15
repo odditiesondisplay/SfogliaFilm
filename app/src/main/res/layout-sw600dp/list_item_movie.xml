@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ The MIT License (MIT)
+  ~
+  ~ Copyright (c) 2015 Fabrizio.
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in all
+  ~ copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  ~ SOFTWARE.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="fill_horizontal"
+    android:padding="1dp"
+    android:background="@drawable/touch_selector">
+    <FrameLayout android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+    <ImageView
+        android:layout_width="92dp"
+        android:layout_height="match_parent"
+        android:id="@+id/smallPoster"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:background="@android:drawable/picture_frame"
+        android:src="@drawable/ic_sm"
+        />
+    </FrameLayout>
+    <LinearLayout  android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp" >
+        <TextView android:text="@string/EMPTY_TITLE"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/tv_showTitle"
+            android:textSize="@dimen/title_item_list"
+            android:gravity="top|start"
+            android:layout_weight="2"
+            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+            <TextView android:text="@string/debug_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_showDate"
+                android:gravity="bottom|end"
+                android:paddingRight="@dimen/paddefault"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

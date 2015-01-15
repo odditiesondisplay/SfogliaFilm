@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="fill_horizontal"
+    android:padding="1dp"
+    android:background="@drawable/touch_selector">
+    <FrameLayout android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+    <ImageView
+        android:layout_width="92dp"
+        android:layout_height="match_parent"
+        android:id="@+id/smallPoster"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:background="@android:drawable/picture_frame"
+        android:src="@drawable/ic_sm"
+        />
+     </FrameLayout>
+    <LinearLayout  android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp" >
+        <TextView android:text="@string/EMPTY_TITLE"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/tv_showTitle"
+            android:textSize="@dimen/title_item_list"
+            android:gravity="top|start"
+            android:layout_weight="2"
+            />
+        <TextView android:text="@string/debug_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_shortsummary"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="2dp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+            <TextView android:text="@string/debug_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_showDate"
+                android:gravity="bottom|end"
+                android:paddingRight="@dimen/paddefault"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

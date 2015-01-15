@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" android:layout_width="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:weightSum="5">
+        <FrameLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:id="@+id/frameLayout" android:layout_weight="2">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/smallPoster"
+                android:scaleType="fitXY"
+                android:padding="5dp"
+                android:background="@android:drawable/picture_frame"
+                android:src="@drawable/fourofour"
+                android:adjustViewBounds="true"
+                />
+        </FrameLayout>
+        <LinearLayout  android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="2sp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="3">
+            <TextView android:text="@string/EMPTY_TITLE"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_showTitle"
+                android:textSize="@dimen/title_detail"
+                android:gravity="top|start"
+                />
+            <TextView android:text="@string/debug_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_showDate"
+                android:gravity="bottom|right"
+                android:padding="@dimen/paddefault" />
+            <TextView android:text="@string/debug_directors"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tv_directors"
+                android:gravity="center|start"
+                android:padding="@dimen/paddefault"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:text="@string/debug_tagline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_tagline"
+        android:padding="@dimen/paddefault"
+        />
+    <TextView android:text="@string/debug_attori"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_actors"
+        android:padding="@dimen/paddefault"
+        />
+    <TextView android:text="@string/debug_overview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:id="@+id/tv_overview"
+        android:padding="@dimen/paddefault"
+        />
+    <TextView android:text="@string/debug_languages"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_languages"
+        android:padding="@dimen/paddefault"
+        />
+
+        <TextView android:text="@string/debug_producers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_producers"
+            android:singleLine="false"
+            android:padding="@dimen/paddefault"
+            />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/paddefault"
+        android:padding="@dimen/paddefault"
+        android:layout_gravity="right|bottom">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tmdb_eula_logo"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_tmdblogo"
+            android:layout_marginLeft="0dp"
+            android:contentDescription="@string/eula_logo_txt" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eula_notice"
+            android:id="@+id/tmdb_eulasttmt"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+            android:layout_toRightOf="@+id/tmdb_eula_logo"
+            android:textSize="@dimen/smalltext"
+            android:layout_alignBottom="@+id/tmdb_eula_logo" />
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+</ScrollView>
+

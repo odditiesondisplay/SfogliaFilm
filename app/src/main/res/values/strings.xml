@@ -2,6 +2,37 @@
 <resources>
 
     <string name="app_name">SfogliaFilm</string>
-    <string name="title_movie_detail">Movie Detail</string>
+    <string name="EMPTY_TITLE">Lorem ipsum</string>
+    <string name="debug_data">2015-01-23</string>
+    <string name="debug_attori">Cast: aaa bbb, ccccc ddddd, eeee fffff</string>
+    <string name="debug_tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</string>
+    <string name="debug_tags">love affair, male friendship, murder mystery</string>
+    <string name="debug_producers">Produced by: Aaaaa Bbbbbb CCCC, Dddddd Eeeeeee</string>
+    <string name="debug_languages">Language: ll</string>
+    <string name="debug_directors">Directed by: Aaaaa Bbbbbb</string>
+    <string name="debug_overview">Incipit: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
 
+    <!--  -->
+    <string name="title_movie_list">Movies</string>
+    <string name="title_movie_detail">Movie Detail</string>
+    <string name="str_refresh">Refresh</string>
+    <string name="share">Save the date</string>
+    <!-- EULA notice -->
+    <string name="eula_notice">This product uses the TMDb API but is not endorsed or certified by TMDb.</string>
+    <string name="eula_logo_txt">TMDB eula logo image</string>
+    <!-- -->
+    <string name="regia">Directed by:</string>
+    <string name="lingua">Language:</string>
+    <string name="produzione">Produced by:</string>
+    <string name="motto">Motto:</string>
+    <string name="storia">Incipit:</string>
+    <string name="attori">Cast:</string>
+    <!--  -->
+    <string name="title_video_list">SfogliaFilm</string>
+    <string name="title_video_detail">Movie Detail</string>
+    <!-- Account type -->
+    <string name="sync_account_type">SfogliaFilm.fab.example.com</string>
+    <string name="content_authority">com.example.fab.android.sfogliafilm.data</string>
+    <string name="sync_service_name">com.example.fab.android.sfogliafilm.sync.SfogliaFilmSyncService</string>
+    <string name="authenticator_label">SfogliaFilm sync service</string>
 </resources>
