@@ -49,6 +49,7 @@ import java.util.Vector;
  * Real business logic implemetation
  */
 public class SfogliaFilmSyncAdapter extends AbstractThreadedSyncAdapter {
+    public static final int SYNC_INTERVAL_SECONDS = 1800;
     private final String LOG_TAG= SfogliaFilmSyncAdapter.class.getSimpleName();
     private final ContentResolver mContentResolver;
 
@@ -189,21 +190,9 @@ public class SfogliaFilmSyncAdapter extends AbstractThreadedSyncAdapter {
     }
 
 
-    public static void configurePeriodicSync(Context context, int syncInterval, int flexTime) {
+    public static void configurePeriodicSync(Context context, int syncInterval) {
         Account account = getSyncAccount(context);
         String authority = context.getString(R.string.content_authority);
-        /*
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            // we can enable inexact timers in our periodic sync
-            SyncRequest request = new SyncRequest.Builder().
-                    syncPeriodic(syncInterval, flexTime).
-                    setSyncAdapter(account, authority).build();
-            ContentResolver.requestSync(request);
-        } else {
-            ContentResolver.addPeriodicSync(account,
-                    authority, new Bundle(), syncInterval);
-        }
-        */
         ContentResolver.addPeriodicSync(account,
                 authority, new Bundle(), syncInterval);
         ContentResolver.setSyncAutomatically(account, authority, true);
@@ -222,6 +211,6 @@ public class SfogliaFilmSyncAdapter extends AbstractThreadedSyncAdapter {
 
     public static void initializeSyncAdapter(Context context) {
         getSyncAccount(context);
-        configurePeriodicSync(context,1800,10);
+        configurePeriodicSync(context, SYNC_INTERVAL_SECONDS);
     }
 }
